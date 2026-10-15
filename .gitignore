@@ -1,0 +1,95 @@
+# ==============================================================================
+# Git Ignore Configuration for Vietnamese Hotel Review Sentiment Analysis (MSSA)
+# ==============================================================================
+
+# --- Python & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Jupyter Notebook Checkpoints ---
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+.virtual_documents/
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Deep Learning Model Checkpoints & Weights (Heavy Files) ---
+*.pt
+*.pth
+*.bin
+*.onnx
+*.safetensors
+*.h5
+*.tflite
+Model/
+model/
+models/
+checkpoints/
+output/
+outputs/
+MSSA_TEST_FINE_TUNE*/
+
+# --- Experiment Logging & Monitoring ---
+wandb/
+runs/
+logs/
+*.log
+mlruns/
+.tensorboard/
+
+# --- IDEs & Editors ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+
+# --- Operating System Files ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Large Datasets (> 10MB to avoid GitHub upload limits/warnings) ---
+# Note: GitHub limits files > 100MB and warns for files > 50MB.
+Data/*.csv
+Data/*.xlsx
+Data/booking_sent_analysis_data.pkl
+Data/booking_sent_analysis_data_TEST.pkl
+
+# Keep lightweight test sample data if needed:
+!Data/booking_sent_analysis_data_clean_test.pkl
+
+# --- CRITICAL: EXPLICITLY KEEP PLOTS AND VISUALIZATIONS ---
+# Đảm bảo git luôn theo dõi và upload các hình ảnh biểu đồ trong plots/
+!plots/
+!plots/**
+!*.png
+!*.jpg
+!*.jpeg
