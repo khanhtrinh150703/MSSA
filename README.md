@@ -329,6 +329,5 @@ git push -u origin main
 
 ## 📜 Giấy phép & Trích dẫn
 
-Dự án được phân phối dưới giấy phép **MIT License**. Mọi đóng góp, phản hồi và trao đổi học thuật xin vui lòng mở Issue hoặc Pull Request trên repository.
+Dự án được phân phối dưới giấy phép **MIT License**. 
 
-*Chúc bạn hoàn thành xuất sắc dự án và báo cáo!* 🎓🚀
